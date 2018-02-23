@@ -1,3 +1,27 @@
 <view class="index-list">
-  index list component
+
+  <scroll-view scroll-y style="height: calc(100vh - 36rpx); padding-bottom: 36rpx;" scroll-into-view="{{toViewId}}">
+
+      <view class='items'>
+
+          <view class="group" wx:for='{{groupedItems}}' wx:for-item='group' wx:key='{{group.groupId}}'>
+
+              <view class="label" id='{{group.groupId}}'>{{group.groupName}}</view>
+              <view class="label-line"></view>
+
+              <navigator wx:for='{{group.items}}' wx:for-item='item' wx:key='{{item.id}}'
+                  url="{{item.link}}" hover-class="navigator-hover">
+
+                  <view class='item'>
+                      {{item.name}}
+                  </view>
+
+              </navigator>
+          </view>
+      </view>
+  </scroll-view>
+
+  <view class="nav">
+      <text wx:for='{{alphabet}}' wx:key='*this' data-char="{{item}}" bindtouchend="navToGroup">{{item}}</text>
+  </view>
 </view>
