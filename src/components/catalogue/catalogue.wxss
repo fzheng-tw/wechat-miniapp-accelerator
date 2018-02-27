@@ -25,11 +25,11 @@
     margin: 0 76rpx 0 32rpx;
 }
 
-.group {
+.categorized {
     margin-bottom: 70rpx;
 }
 
-.group .item {
+.categorized .item {
     padding: 18rpx 0;
     font-size: 18px;
     height: 42rpx;
@@ -41,14 +41,14 @@
     padding-left: 32rpx;
 }
 
-.group .label {
+.categorized .label {
     font-size: 72rpx;
     font-weight: bold;
     padding-left: 32rpx;
     letter-spacing: 6rpx;
 }
 
-.group .label-line {
+.categorized .label-line {
     height: 3px;
     opacity: 0.34;
     border-bottom: solid 1px #979797;

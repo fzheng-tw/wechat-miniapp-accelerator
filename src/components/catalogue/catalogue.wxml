@@ -4,12 +4,12 @@
 
       <view class='items'>
 
-          <view class="group" wx:for='{{groupedItems}}' wx:for-item='group' wx:key='{{group.groupId}}'>
+          <view class="categorized" wx:for='{{categorizedItems}}' wx:for-item='categorized' wx:key='{{categorized.categoryId}}'>
 
-              <view class="label" id='{{group.groupId}}'>{{group.groupName}}</view>
+              <view class="label" id='{{categorized.categoryId}}'>{{categorized.categoryName}}</view>
               <view class="label-line"></view>
 
-              <navigator wx:for='{{group.items}}' wx:for-item='item' wx:key='{{item.id}}'
+              <navigator wx:for='{{categorized.items}}' wx:for-item='item' wx:key='{{item.id}}'
                   url="{{item.link}}" hover-class="navigator-hover">
 
                   <view class='item'>
@@ -22,8 +22,8 @@
   </scroll-view>
 
   <view class="nav">
-      <text wx:for='{{categories}}' wx:for-item='category' wx:key='category.name'
-        data-name="{{category.name}}"
-        bindtouchend="navToGroup">{{category.text}}</text>
+      <text wx:for='{{categories}}' wx:for-item='category' wx:key='category.id'
+        data-categoryid="{{category.id}}"
+        bindtouchend="navToGroup">{{category.name}}</text>
   </view>
 </view>
