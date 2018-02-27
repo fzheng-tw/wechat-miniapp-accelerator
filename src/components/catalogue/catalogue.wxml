@@ -22,6 +22,6 @@
   </scroll-view>
 
   <view class="nav">
-      <text wx:for='{{alphabet}}' wx:key='*this' data-char="{{item}}" bindtouchend="navToGroup">{{item}}</text>
+      <text wx:for='{{categories}}' wx:key='*this' data-char="{{item}}" bindtouchend="navToGroup">{{item}}</text>
   </view>
 </view>

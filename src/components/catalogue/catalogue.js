@@ -1,26 +1,14 @@
 Component({
   properties: {
+    categories: Array,
     items: Array
   },
 
   attached: function(){
-    this._generateAlphabet();
     this._setGroupedItems();
   },
 
   methods: {
-    _generateAlphabet: function () {
-        let alphabet = [];
-        for (let i = 'A'.charCodeAt(0); i <= 'Z'.charCodeAt(0); i++) {
-            alphabet.push(String.fromCharCode(i));
-        }
-
-        alphabet.push('#');
-
-        this.setData({
-            alphabet: alphabet
-        });
-    },
 
     _setGroupedItems: function () {
       this.setData({
@@ -39,9 +27,8 @@ Component({
   },
 
   data: {
-      groupedItems: [],
-      alphabet: [],
-      toViewId: 'a'
+    groupedItems: [],
+    toViewId: ''
   }
 
 })

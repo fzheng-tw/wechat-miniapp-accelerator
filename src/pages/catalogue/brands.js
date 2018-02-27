@@ -231,7 +231,26 @@ const brands = [
 Page({
 
   data: {
-    items: brands
+    items: brands,
+    categories: []
+  },
+
+  onLoad() {
+    this._generateAlphabet();
+  },
+
+  _generateAlphabet: function () {
+
+      let alphabet = [];
+      for (let i = 'A'.charCodeAt(0); i <= 'Z'.charCodeAt(0); i++) {
+          alphabet.push(String.fromCharCode(i));
+      }
+
+      alphabet.push('#');
+
+      this.setData({
+        categories: alphabet
+      });
   }
 
 })
