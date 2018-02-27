@@ -1,4 +1,4 @@
-const {brands} = require('../../constants/brands')
+const {brands} = require('../../constants/brands');
 
 Page({
 
