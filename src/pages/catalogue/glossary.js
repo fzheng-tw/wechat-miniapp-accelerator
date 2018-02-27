@@ -3,21 +3,20 @@ const {glossary} = require('../../constants/glossary');
 Page({
 
   data: {
-    categorizedItems: [],
+    categoriesNavigation: [],
     categories: []
   },
 
   onLoad() {
-    console.log(this.getCategorizedItems(glossary));
     this.setData(
       {
-        categories: this.getCategoryies(glossary),
-        categorizedItems: this.getCategorizedItems(glossary)
+        categoriesNavigation: this.getCategoriesNavigation(glossary),
+        categories: this.getCategorizedItems(glossary)
       }
     );
   },
 
-  getCategoryies(glossary) {
+  getCategoriesNavigation(glossary) {
     return glossary.map((item) => {
       return {
         id: item.categoryEN.replace(' ', '-'),
@@ -29,8 +28,8 @@ Page({
   getCategorizedItems(glossary) {
     return glossary.map((item) => {
       return {
-        categoryId: item.categoryEN.replace(' ', '-'),
-        categoryName: item.categoryCN,
+        id: item.categoryEN.replace(' ', '-'),
+        name: item.categoryCN,
         items: item.words.map((tuple) => {
           return {
             id: tuple[0],

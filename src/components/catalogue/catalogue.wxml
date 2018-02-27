@@ -2,14 +2,14 @@
 
   <scroll-view scroll-y style="height: calc(100vh - 36rpx); padding-bottom: 36rpx;" scroll-into-view="{{toViewId}}">
 
-      <view class='items'>
+      <view class='categories'>
 
-          <view class="categorized" wx:for='{{categorizedItems}}' wx:for-item='categorized' wx:key='{{categorized.categoryId}}'>
+          <view class="category" wx:for='{{categories}}' wx:for-item='category' wx:key='{{category.id}}'>
 
-              <view class="label" id='{{categorized.categoryId}}'>{{categorized.categoryName}}</view>
+              <view class="label" id='{{category.id}}'>{{category.name}}</view>
               <view class="label-line"></view>
 
-              <navigator wx:for='{{categorized.items}}' wx:for-item='item' wx:key='{{item.id}}'
+              <navigator wx:for='{{category.items}}' wx:for-item='item' wx:key='{{item.id}}'
                   url="{{item.link}}" hover-class="navigator-hover">
 
                   <view class='item'>
@@ -22,7 +22,7 @@
   </scroll-view>
 
   <view class="nav">
-      <text wx:for='{{categories}}' wx:for-item='category' wx:key='category.id'
+      <text wx:for='{{categoriesNavigation}}' wx:for-item='category' wx:key='category.id'
         data-categoryid="{{category.id}}"
         bindtouchend="navToGroup">{{category.name}}</text>
   </view>

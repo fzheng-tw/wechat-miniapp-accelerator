@@ -3,15 +3,15 @@ const {brands} = require('../../constants/brands');
 Page({
 
   data: {
-    categorizedItems: [],
+    categoriesNavigation: [],
     categories: []
   },
 
   onLoad() {
     this.setData(
       {
-        categories: generateAlphabet(),
-        categorizedItems: convertToCategorizedItems(brands)
+        categoriesNavigation: generateAlphabet(),
+        categories: convertToCategorizedItems(brands)
       }
     );
   }
@@ -63,8 +63,8 @@ const convertToCategorizedItems = (items) => {
 
   const categorizedItems = groupsNames.map((groupName) => {
     return {
-        categoryId: generateGroupId(groupName),
-        categoryName: groupName,
+        id: generateGroupId(groupName),
+        name: groupName,
         items: groups[groupName]
     }
   });

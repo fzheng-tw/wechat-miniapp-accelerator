@@ -1,7 +1,7 @@
 Component({
   properties: {
     categories: Array,
-    categorizedItems: Array
+    categoriesNavigation: Array
   },
 
   data: {
