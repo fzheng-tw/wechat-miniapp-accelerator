@@ -25,7 +25,7 @@ const generateAlphabet = () => {
       alphabet.push({id: String.fromCharCode(i), name: String.fromCharCode(i)});
     }
 
-    alphabet.push({id:'#', name: '#'});
+    alphabet.push({id:'special', name: '#'});
     return alphabet;
 };
 
@@ -37,6 +37,14 @@ const generateGroupName = (firstLetter) => {
         return '#'
     }
 };
+
+function generateGroupId(groupName) {
+    if (groupName === '#') {
+        return 'special'
+    }
+    return groupName;
+}
+
 
 const convertToCategorizedItems = (items) => {
   let groups = {};
@@ -55,7 +63,7 @@ const convertToCategorizedItems = (items) => {
 
   const categorizedItems = groupsNames.map((groupName) => {
     return {
-        categoryId: groupName,
+        categoryId: generateGroupId(groupName),
         categoryName: groupName,
         items: groups[groupName]
     }
