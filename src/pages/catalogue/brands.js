@@ -243,10 +243,10 @@ Page({
 
       let alphabet = [];
       for (let i = 'A'.charCodeAt(0); i <= 'Z'.charCodeAt(0); i++) {
-          alphabet.push(String.fromCharCode(i));
+          alphabet.push({name: String.fromCharCode(i), text: String.fromCharCode(i)});
       }
 
-      alphabet.push('#');
+      alphabet.push({name:'#', text: '#'});
 
       this.setData({
         categories: alphabet

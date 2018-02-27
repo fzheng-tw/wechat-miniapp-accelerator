@@ -17,8 +17,8 @@ Component({
     },
 
     navToGroup: function (event) {
-      const char = event.target.dataset.char.toLowerCase();
-      const groupName = generateGroupName(char);
+      const name = event.target.dataset.name.toLowerCase();
+      const groupName = generateGroupName(name);
       let id = generateGroupId(groupName);
       this.setData({
           toViewId: id
