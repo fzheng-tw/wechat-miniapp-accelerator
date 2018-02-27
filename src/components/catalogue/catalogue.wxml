@@ -1,4 +1,4 @@
-<view class="index-list">
+<view class="catalogue">
 
   <scroll-view scroll-y style="height: calc(100vh - 36rpx); padding-bottom: 36rpx;" scroll-into-view="{{toViewId}}">
 

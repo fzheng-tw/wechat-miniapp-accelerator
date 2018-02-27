@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "catalogue": "/components/catalogue/catalogue"
+  }
+}

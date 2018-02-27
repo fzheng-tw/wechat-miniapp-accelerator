@@ -1,3 +1,0 @@
-<view>
-  <index-list items="{{items}}"></index-list>
-</view>
