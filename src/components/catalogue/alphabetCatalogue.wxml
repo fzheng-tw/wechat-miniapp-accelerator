@@ -1,0 +1,3 @@
+<view>
+  <catalogue categoriesNavigation="{{categoriesNavigation}}" categories="{{categories}}"></catalogue>
+</view>

@@ -1,3 +1,3 @@
 <view>
-  <catalogue categoriesNavigation="{{categoriesNavigation}}" categories="{{categories}}"></catalogue>
+  <alphabetCatalogue items="{{items}}" categoriesNavigation="{{categoriesNavigation}}" categories="{{categories}}"></alphabetCatalogue>
 </view>

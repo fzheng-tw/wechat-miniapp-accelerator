@@ -2,7 +2,6 @@
     margin: 0 76rpx 0 32rpx;
 }
 
-
 .line {
     height: 1px;
     background-color: #f3f3f3;

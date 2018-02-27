@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "catalogue": "/components/catalogue/catalogue"
+    "alphabetCatalogue": "/components/catalogue/alphabetCatalogue"
   }
 }
