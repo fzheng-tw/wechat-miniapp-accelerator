@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "voucher": "/components/cards/voucher"
+  }
+}

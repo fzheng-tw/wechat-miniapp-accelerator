@@ -1,0 +1,30 @@
+<view class="voucher">
+  <view class="voucher-value left-right-layout">
+    <text class="available-balance">${{voucher.voucher_value}}</text>
+    <view class="current-balance up-bottom-layout">
+      <text class="title">余额</text>
+      <text class="value">${{voucher.current_balance}}</text>
+    </view>
+  </view>
+
+  <view class="card-info left-right-layout">
+    <view class="expiry-date up-bottom-layout info-item">
+      <text class="info-item__title">有效期至 VALID UNTIL</text>
+      <text class="info-item__value">{{voucher.expiry_date}}</text>
+    </view>
+
+    <view class="pin info-item up-bottom-layout">
+      <text class="info-item__title">访问码 PIN</text>
+      <text class="info-item__value">{{voucher.pin}}</text>
+    </view>
+  </view>
+
+  <image class="barcode" src="{{voucher.barcode}}" mode="widthFix"></image>
+
+  <text class="card-number">{{voucher.card_number_display}}</text>
+
+  <view class="limitation">
+    <text>{{voucher.specification}}</text>
+  </view>
+
+</view>

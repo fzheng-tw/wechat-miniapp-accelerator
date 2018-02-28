@@ -1,4 +1,5 @@
 <view class="container">
   <navigator url="/pages/catalogue/brands">品牌目录</navigator>
   <navigator url="/pages/catalogue/glossary">词汇表</navigator>
+  <navigator url="/pages/vouchers/vouchers">代金券</navigator>
 </view>

@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/catalogue/glossary",
-    "pages/catalogue/brands"
+    "pages/catalogue/brands",
+    "pages/vouchers/vouchers"
   ],
   "window":{
     "backgroundTextStyle":"light",
