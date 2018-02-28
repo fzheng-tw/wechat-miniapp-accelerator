@@ -4,7 +4,8 @@
     "pages/catalogue/glossary",
     "pages/catalogue/brands",
     "pages/vouchers/vouchers",
-    "pages/coupons/coupons"
+    "pages/coupons/coupons",
+    "pages/brandsList/brandsList"
   ],
   "window":{
     "backgroundTextStyle":"light",

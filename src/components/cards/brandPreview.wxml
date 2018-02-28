@@ -1,0 +1,22 @@
+<view class="brand-preview" bind:tap="toDetail">
+
+  <image wx:if="{{brand.bookmarked}}" class="brand-preview-bookmark" src="../../assets/images/bookmark.png" mode="aspectFit"></image>
+
+  <view class="brand-preview-image-container">
+    <image class="brand-preview-image" src="{{brand.heroImageUrl}}" mode="widthFix"></image>
+  </view>
+
+  <view class="brand-preview-basic">
+    <text class="brand-preview-name">{{brand.brandName}}</text>
+    <view class="brand-preview-approval">
+      <image src="../../assets/images/favorite.png" mode="aspectFit"></image>
+      <text>{{brand.likes}}</text>
+    </view>
+  </view>
+
+  <view class="brand-preview-category">
+    <text class="brand-preview-info-label">品牌类型:</text>
+    <text class="brand-preview-info-text">{{brand.categories}}</text>
+  </view>
+
+</view>

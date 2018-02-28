@@ -1,0 +1,78 @@
+.brand-preview{
+  position: relative;
+  margin: 40rpx 40rpx 0;
+  font-size: 0;
+}
+
+.brand-preview-bookmark{
+  position: absolute;
+  width: 14px;
+  height: 20px;
+  top: 0;
+  right: 10px;
+}
+
+.brand-preview-basic{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+}
+
+.brand-preview-name{
+  font-family: SanFranciscoText-Heavy;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+.brand-preview-image-container{
+  width: 670rpx;
+  max-height: 378rpx;
+  overflow: hidden;
+}
+
+.brand-preview-image{
+  width: 670rpx;
+}
+
+.brand-preview-approval{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  text-align: right;
+}
+
+.brand-preview-approval image{
+  width: 14px;
+  height: 14px;
+}
+
+.brand-preview-approval text{
+  display: inline-block;
+  width: 25px;
+  font-family: SanFranciscoText-Regular;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: rgb(155, 155, 155);
+}
+
+.brand-preview-category,
+.brand-preview-exhibition{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+
+.brand-preview-info-label{
+  padding-right: 5px;
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+}
+
+.brand-preview-info-text{
+  flex: 1;
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+}

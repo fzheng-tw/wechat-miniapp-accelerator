@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "brandPreview": "/components/cards/brandPreview"
+  }
+}

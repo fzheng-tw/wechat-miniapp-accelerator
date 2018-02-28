@@ -3,4 +3,5 @@
   <navigator url="/pages/catalogue/glossary">词汇表</navigator>
   <navigator url="/pages/vouchers/vouchers">代金券</navigator>
   <navigator url="/pages/coupons/coupons">折扣券</navigator>
+  <navigator url="/pages/brandsList/brandsList">品牌预览</navigator>
 </view>
