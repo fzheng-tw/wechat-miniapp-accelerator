@@ -1,0 +1,3 @@
+<view>
+  <coupon coupon="{{coupon}}"></coupon>
+</view>

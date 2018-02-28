@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/catalogue/glossary",
     "pages/catalogue/brands",
-    "pages/vouchers/vouchers"
+    "pages/vouchers/vouchers",
+    "pages/coupons/coupons"
   ],
   "window":{
     "backgroundTextStyle":"light",

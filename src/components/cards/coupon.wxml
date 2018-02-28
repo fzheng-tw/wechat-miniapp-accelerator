@@ -1,0 +1,28 @@
+<view class="coupon">
+
+  <view class="basic-info up-bottom-layout">
+    <view class="left-right-layout title-value">
+      <view class="coupon-value up-bottom-layout">
+        <text class="chinese">{{coupon.chinese_value}}</text>
+        <text class="english">{{coupon.english_value}}</text>
+      </view>
+      <view class="coupon-title">
+        <image wx:if="{{coupon.title_image != '' }}" src="{{coupon.title_image}}" class="title-image "mode="aspectFit"></image>
+        <text wx:else class="title">{{coupon.title}}</text>
+      </view>
+    </view>
+
+    <view class="detail up-bottom-layout">
+      <text class="chinese">{{coupon.chinese_detail}}</text>
+      <text class="english">{{coupon.english_detail}}</text>
+    </view>
+  </view>
+
+  <view class="expiry-date up-bottom-layout info-item">
+    <text class="info-item__title">有效期至 Valid Until</text>
+    <text class="info-item__value">{{coupon.expiry_date}}</text>
+  </view>
+
+  <image class="barcode" src="{{coupon.barcode}}" mode="widthFix"></image>
+
+</view>
