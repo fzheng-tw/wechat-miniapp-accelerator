@@ -1,0 +1,11 @@
+<view class="product-preview media media--center" bind:tap="toDetail">
+  <image class="product-img media-figure" src='{{product.heroImage}}' mode="aspectFill"></image>
+  <view class="product-info media-body">
+    <view class="product-name">
+      <text class="name">{{product.english_name}}</text>
+      <text class="name">{{product.chinese_name}}</text>
+    </view>
+
+    <text class="product-price">${{product.price}}</text>
+  </view>
+</view>
