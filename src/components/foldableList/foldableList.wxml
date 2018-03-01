@@ -1,0 +1,20 @@
+<view class="foldable-list">
+
+  <view class="content-header" bind:tap="fold">
+
+    <text class="content-header-title">{{title}}</text>
+    <view class="content-header-indicator"></view>
+    <image wx:if="{{!folded}}" class="content-header-operate" src="../../assets/images/plus.png"></image>
+    <image wx:if="{{folded}}" class="content-header-operate minus" src="../../assets/images/minus.png"></image>
+
+  </view>
+
+  <view class="items" >
+    <view selectable="true" wx:if="{{folded}}">
+      <view wx:for="{{infoItems}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <text>{{item}}</text>
+      </view>
+    </view>
+  </view>
+
+</view>

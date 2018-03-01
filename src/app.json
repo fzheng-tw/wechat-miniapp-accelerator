@@ -6,7 +6,8 @@
     "pages/vouchers/vouchers",
     "pages/coupons/coupons",
     "pages/brandsList/brandsList",
-    "pages/productsList/productsList"
+    "pages/productsList/productsList",
+    "pages/brandsDistribution/brandsDistribution"
   ],
   "window":{
     "backgroundTextStyle":"light",

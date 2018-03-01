@@ -1,0 +1,5 @@
+<view class="floors">
+  <view class="floor" wx:for='{{floors}}' wx:for-item='floor' wx:for-index='index' wx:key='{{index}}'>
+    <foldableList title="{{floor.title}}" infoItems="{{floor.brands}}"></foldableList>
+  </view>
+</view>

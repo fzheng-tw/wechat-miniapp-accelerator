@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "foldableList": "/components/foldableList/foldableList"
+  }
+}
