@@ -6,4 +6,5 @@
   <navigator url="/pages/brandsList/brandsList">品牌预览</navigator>
   <navigator url="/pages/productsList/productsList">产品预览</navigator>
   <navigator url="/pages/brandsDistribution/brandsDistribution">品牌分布</navigator>
+  <navigator url="/pages/productDetail/productDetail">产品详情</navigator>
 </view>

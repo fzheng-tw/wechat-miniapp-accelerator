@@ -1,0 +1,32 @@
+<view class="product">
+  <swiper class="prod__images" indicator-dots="{{product.images.length > 1}}">
+    <block wx:for="{{product.images}}" wx:key="{{items}}">
+      <swiper-item class="image-wrapper">
+        <image src="{{item}}" class="prod__image" mode="widthFix"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="brand">
+    <text class="brand__english-name">{{product.brand.english_name}}</text>
+    <text class="brand__chinese-name">{{product.brand.chinese_name}}</text>
+  </view>
+
+  <view class="prod">
+    <view class="prod__name">
+      <text class="name__english-name">{{product.english_name}}</text>
+      <text class="name__chinese-name">{{product.chinese_name}}</text>
+    </view>
+    <view class="prod__price">
+      <text>单价</text>
+      <text>{{product.price}}</text>
+    </view>
+  </view>
+
+  <view wx:if="{{product.description.length > 0}}"
+    class="prod-desc page-side-space">
+      <block wx:for="{{product.description}}" wx:key="item">
+          <text class="desc-item">{{item}}</text>
+      </block>
+  </view>
+
+</view>
