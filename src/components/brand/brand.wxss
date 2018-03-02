@@ -1,0 +1,39 @@
+.brand-hero {
+  width: 100%;
+}
+
+
+.brand-logo-container{
+  padding: 0 24px;
+  text-align: center;
+}
+
+.brand-logo{
+  max-width: 670rpx;
+}
+
+.title-wrapper {
+  text-align: center;
+}
+
+.title-wrapper .hot-title {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 40px auto;
+    border-bottom: solid 2px #000000;
+    padding-bottom: 3px;
+}
+
+.brand-desc {
+  font-size: 14px;
+  display: block;
+  padding: 20px;
+  margin: 0 20px 30px;
+  background-color: #F4F4F4;
+  line-height: 28px;
+}
+
+.product {
+  margin-bottom: 20px;
+}

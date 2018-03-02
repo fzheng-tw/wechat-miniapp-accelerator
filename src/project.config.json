@@ -32,6 +32,24 @@
 					"name": "indexlist页面",
 					"pathName": "pages/indexList/indexList",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "品牌分布",
+					"pathName": "pages/brandsDistribution/brandsDistribution",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "产品详情",
+					"pathName": "pages/productDetail/productDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "品牌故事",
+					"pathName": "pages/brandDetail/brandDetail",
+					"query": ""
 				}
 			]
 		}

@@ -23,7 +23,7 @@
 
 .product-preview {
   overflow: hidden;
-  margin: 0 35px;
+  margin: 0 20px;
 }
 
 .product-img {

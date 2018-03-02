@@ -1,0 +1,22 @@
+<view>
+  <view class="brand-hero-container">
+    <image class="brand-hero" src="{{brand.heroImage}}" mode="widthFix"></image>
+  </view>
+
+  <view class="brand-logo-container">
+    <image class="brand-logo" src="{{brand.logo}}" mode="widthFix"></image>
+  </view>
+
+  <text wx:if="{{brand.description}}" class="brand-desc" selectable="true">{{brand.description}}</text>
+
+  <view class="products" wx:if="{{brand.products.length > 0}}">
+
+    <view class="title-wrapper">
+      <text class="hot-title">热门产品 WHAT'S HOT</text>
+    </view>
+
+    <view class="product" wx:for="{{brand.products}}" wx:for-item="product" wx:for-index="index" wx:key="{{index}}">
+      <productPreview product="{{product}}"></productPreview>
+    </view>
+  </view>
+</view>

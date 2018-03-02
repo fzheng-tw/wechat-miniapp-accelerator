@@ -1,0 +1,3 @@
+<view>
+  <brand brand="{{brand}}"></brand>
+</view>

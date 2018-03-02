@@ -8,7 +8,8 @@
     "pages/brandsList/brandsList",
     "pages/productsList/productsList",
     "pages/brandsDistribution/brandsDistribution",
-    "pages/productDetail/productDetail"
+    "pages/productDetail/productDetail",
+    "pages/brandDetail/brandDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",
