@@ -1,10 +1,9 @@
 
 const baseUrl = 'http://localhost:3000'
 
-const request = function(url, options) {
-  return new Promise((resolve, reject) => {
+const request = function(url, method, header, data ) {
 
-    console.log(`${baseUrl}/${url}`);
+  return new Promise((resolve, reject) => {
 
     const header = {};
 
@@ -23,7 +22,8 @@ const request = function(url, options) {
     wx.request({
       url: `${baseUrl}/${url}`,
       header,
-      ...options,
+      method,
+      data,
       success,
       fail
     });
@@ -32,7 +32,7 @@ const request = function(url, options) {
 
 const getRequestMethod = (method) => {
   return (url, options) => {
-    return request(url, {...options, method});
+    return request(url, method, options.header, options.data);
   }
 };
 
